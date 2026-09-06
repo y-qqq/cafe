@@ -1,0 +1,16 @@
+{
+  "name": "cafe-preorder",
+  "version": "1.0.0",
+  "description": "Preorder website for a cafe: customers build an order and pay by QR, staff collect orders on a live dashboard.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.2.1",
+    "qrcode": "^1.5.4"
+  }
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .admin-layout { max-width: 1000px; margin: 0 auto; padding: 1.25rem; }
+    .login-box { max-width: 340px; margin: 3rem auto; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1.5rem; text-align: center; }
+    .stats { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 1rem 0; }
+    .stat { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 0.75rem 1rem; min-width: 120px; }
+    .stat .label { font-size: 0.75rem; color: var(--ink-soft); text-transform: uppercase; }
+    .stat .value { font-size: 1.4rem; font-weight: 700; }
+    .toolbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 0.75rem; }
+    .tabs { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .tab { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 0.35rem 0.8rem; font-size: 0.8rem; cursor: pointer; }
+    .tab.active { background: var(--brand); border-color: var(--brand); color: #fff; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; }
+    th, td { text-align: left; padding: 0.6rem 0.7rem; border-bottom: 1px solid var(--line); font-size: 0.85rem; vertical-align: top; }
+    th { background: var(--cream); font-size: 0.72rem; text-transform: uppercase; color: var(--ink-soft); }
+    .items-cell .meta { color: var(--ink-soft); font-size: 0.78rem; }
+    select.status-select { border: 1px solid var(--line); border-radius: 6px; padding: 0.25rem 0.4rem; font-size: 0.8rem; }
+    .empty-state { text-align: center; padding: 2rem; color: var(--ink-soft); }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>Order dashboard</h1>
+    <div class="tagline" id="last-updated">—</div>
+  </div>
+
+  <div id="login-view" class="admin-layout">
+    <div class="login-box">
+      <h2>Staff login</h2>
+      <div class="field">
+        <label for="passcode">Passcode</label>
+        <input id="passcode" type="password" />
+      </div>
+      <p id="login-error" class="error-banner hidden"></p>
+      <button id="login-btn" class="btn btn-primary btn-block">Enter</button>
+    </div>
+  </div>
+
+  <div id="dashboard-view" class="admin-layout hidden">
+    <div class="stats" id="stats"></div>
+
+    <div class="toolbar">
+      <div class="tabs" id="tabs"></div>
+      <div>
+        <button class="btn btn-secondary" id="export-btn">Export CSV</button>
+        <button class="btn btn-ghost" id="logout-btn">Log out</button>
+      </div>
+    </div>
+
+    <div id="orders-container"></div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
