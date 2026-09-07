@@ -6,7 +6,7 @@ const SYRUPS = [
   { id: 'vanilla', name: 'Vanilla syrup', price: 0.5 },
   { id: 'caramel', name: 'Caramel syrup', price: 0.5 },
   { id: 'hazelnut', name: 'Hazelnut syrup', price: 0.5 },
-  { id: 'sugar-free-vanilla', name: 'Sugar-free vanilla syrup', price: 0.5 },
+  { id: 'chocolate', name: 'Chocolate syrup', price: 0.5 },
 ];
 
 const Cafe X Coffee Club exclusives = [
