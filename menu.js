@@ -9,29 +9,29 @@ const SYRUPS = [
   { id: 'sugar-free-vanilla', name: 'Sugar-free vanilla syrup', price: 0.5 },
 ];
 
-const FOOD = [
+const Cafe X Coffee Club exclusives = [
   {
-    id: 'beef-burger',
-    category: 'food',
-    name: 'Classic Beef Burger',
-    description: 'Beef patty, cheddar, lettuce, house sauce, brioche bun',
-    price: 8.5,
+    id: 'pudding-matcha:',
+    category: 'Cafe X Coffee Club exclusives',
+    name: 'banana pudding matcha',
+    description: 'a trendy, dessert-inspired fusion treat that combines classic vanilla banana pudding with the earthy, vibrant flavor of Japanese green tea.',
+    price: 3.5,
     customizable: false,
   },
   {
-    id: 'chicken-sandwich',
-    category: 'food',
-    name: 'Grilled Chicken Sandwich',
-    description: 'Grilled chicken breast, avocado, mayo, ciabatta',
-    price: 7.9,
+    id: 'affogato',
+    category: 'Cafe X Coffee Club exclusives',
+    name: 'affofato',
+    description: 'a cold scoop of vanilla ice cream or gelato with a hot shot of rich espresso',
+    price: 2.5,
     customizable: false,
   },
   {
-    id: 'veggie-wrap',
-    category: 'food',
-    name: 'Veggie Wrap',
-    description: 'Grilled vegetables, hummus, spinach, whole-wheat wrap',
-    price: 6.9,
+    id: 'red velvet cookie',
+    category: 'Cafe X Coffee Club exclusives',
+    name: 'red velvet cookie',
+    description: 'A red velvet cookie is a striking, vibrant red treat that combines the classic cocoa and subtle tangy flavor of traditional red velvet cake with a soft, chewy cookie texture. ',
+    price: 1.0,
     customizable: false,
   },
 ];
