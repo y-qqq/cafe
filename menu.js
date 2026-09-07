@@ -9,27 +9,27 @@ const SYRUPS = [
   { id: 'chocolate', name: 'Chocolate syrup', price: 0.5 },
 ];
 
-const Cafe X Coffee Club exclusives = [
+const FOOD = [
   {
-    id: 'pudding-matcha:',
-    category: 'Cafe X Coffee Club exclusives',
-    name: 'banana pudding matcha',
+    id: 'pudding-matcha',
+    category: 'food',
+    name: 'Banana Pudding Matcha',
     description: 'a trendy, dessert-inspired fusion treat that combines classic vanilla banana pudding with the earthy, vibrant flavor of Japanese green tea.',
     price: 3.5,
     customizable: false,
   },
   {
     id: 'affogato',
-    category: 'Cafe X Coffee Club exclusives',
-    name: 'affofato',
+    category: 'food',
+    name: 'Affogato',
     description: 'a cold scoop of vanilla ice cream or gelato with a hot shot of rich espresso',
     price: 2.5,
     customizable: false,
   },
   {
-    id: 'red velvet cookie',
-    category: 'Cafe X Coffee Club exclusives',
-    name: 'red velvet cookie',
+    id: 'red-velvet-cookie',
+    category: 'food',
+    name: 'Red Velvet Cookie',
     description: 'A red velvet cookie is a striking, vibrant red treat that combines the classic cocoa and subtle tangy flavor of traditional red velvet cake with a soft, chewy cookie texture. ',
     price: 1.0,
     customizable: false,
